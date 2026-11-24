@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zekâ Tüyosu</title>
+<meta name="description" content="Zekâ Tüyosu: yapay zekâ üzerine kısa, pratik Türkçe videolar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root { --bg:#14213D; --fg:#F5F5F0; --muted:#C9CEDA; --spark:#FFC300;
+  --display:"Archivo Black","Arial Black",system-ui,sans-serif; --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0A1020; } }
+:root[data-theme="dark"] { --bg:#0A1020; }
+body { margin:0; min-height:100vh; background:var(--bg); color:var(--fg); font:400 17px/1.6 var(--body); display:grid; place-items:center; }
+.wrap { max-width:36rem; padding:3rem 16px; display:grid; gap:1.25rem; }
+.brand { display:flex; align-items:center; gap:.7rem; font:400 1.1rem var(--display); }
+.mark { width:2.4rem; height:2.4rem; border-radius:50%; background:#0E1830; display:grid; place-items:center; font:400 1.25rem var(--display); position:relative; }
+.mark::after { content:""; position:absolute; top:.1rem; right:.05rem; width:.55rem; height:.55rem; background:var(--spark);
+  clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%); }
+h1 { font:400 clamp(2rem,7vw,3rem)/1.1 var(--display); margin:0; }
+p { margin:0; color:var(--muted); }
+.links { display:flex; flex-wrap:wrap; gap:.75rem; }
+a.btn { color:#14213D; background:var(--spark); padding:.6rem 1rem; border-radius:8px; font-weight:600; text-decoration:none; }
+a.ghost { color:var(--fg); background:transparent; border:1px solid #3A4766; }
+a:focus-visible { outline:2px solid var(--spark); outline-offset:2px; }
+small { color:var(--muted); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="brand"><span class="mark" aria-hidden="true">Z</span>Zekâ Tüyosu</div>
+  <h1>Yapay zekâda işe yarayan kısa tüyolar.</h1>
+  <p>Zekâ Tüyosu, yapay zekâ (YZ / AI) araçlarını gündelik işte nasıl kullanacağınızı 30–50 saniyelik Türkçe videolarla anlatan bir YouTube kanalıdır. Her bilginin kaynağı ve tarihi video açıklamasında yer alır.</p>
+  <p class="en" lang="en">Zekâ Tüyosu is a YouTube channel with short, practical Turkish videos about AI tools.</p>
+  <div class="links">
+    <a class="btn" href="https://www.youtube.com/channel/UCbF3AIqzuIOGOr0rpMVTEsQ" rel="noopener">YouTube kanalı</a>
+    <a class="btn ghost" href="/gizlilik/">Gizlilik Politikası / Privacy Policy</a>
+  </div>
+  <small>İletişim / Contact: konumsalismail@gmail.com</small>
+</main>
+</body>
+</html>
